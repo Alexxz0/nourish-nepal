@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce Website</title>
+    <link rel="stylesheet" href="{% static 'index.css' %}" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Nourish Nepal</h1>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Dite</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container-two">
+        <h2>Welcome to our Dite Store</h2>
+        <a href="#" class="btn">Show more</a>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container-three">
+        <p>&copy; 2024 Nourish Nepal. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
